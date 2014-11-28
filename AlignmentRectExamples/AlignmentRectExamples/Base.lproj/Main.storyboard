@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlignmentRectExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7X-WL-mfq" customClass="BadgedView" customModule="AlignmentRectExamples" customModuleProvider="target">
+                                <rect key="frame" x="200" y="150" width="200" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 22 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXm-xv-Odf">
+                                        <rect key="frame" x="174" y="0.0" width="26" height="18"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57567988859999997" blue="0.36566969529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oXm-xv-Odf" secondAttribute="trailing" id="9zo-VL-S1P"/>
+                                    <constraint firstAttribute="height" constant="100" id="eLb-Am-5Oz"/>
+                                    <constraint firstAttribute="width" constant="200" id="fu2-x9-EPo"/>
+                                    <constraint firstItem="oXm-xv-Odf" firstAttribute="top" secondItem="H7X-WL-mfq" secondAttribute="top" id="tTc-aW-yha"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRS-EK-gRU">
+                                <rect key="frame" x="214" y="337" width="174" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQS-Z1-pal" customClass="DecoratedView" customModule="AlignmentRectExamples" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="H7w-EA-Ah5">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.57567988859999997" blue="0.36566969529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="H7w-EA-Ah5" firstAttribute="top" secondItem="qQS-Z1-pal" secondAttribute="top" id="V5x-Nb-rdg"/>
+                                            <constraint firstAttribute="trailing" secondItem="H7w-EA-Ah5" secondAttribute="trailing" id="bBW-g2-s8E"/>
+                                            <constraint firstAttribute="bottom" secondItem="H7w-EA-Ah5" secondAttribute="bottom" id="joG-0E-lx7"/>
+                                            <constraint firstItem="H7w-EA-Ah5" firstAttribute="leading" secondItem="qQS-Z1-pal" secondAttribute="leading" id="ppo-8H-hIN"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 22 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oik-o5-8dR">
+                                        <rect key="frame" x="148" y="0.0" width="26" height="128"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="qQS-Z1-pal" firstAttribute="top" secondItem="DRS-EK-gRU" secondAttribute="top" id="1bi-vu-M9R"/>
+                                    <constraint firstItem="oik-o5-8dR" firstAttribute="height" secondItem="qQS-Z1-pal" secondAttribute="height" id="Bjb-ZR-5mi"/>
+                                    <constraint firstItem="oik-o5-8dR" firstAttribute="centerY" secondItem="qQS-Z1-pal" secondAttribute="centerY" id="Mfp-O9-MZ9"/>
+                                    <constraint firstAttribute="trailing" secondItem="oik-o5-8dR" secondAttribute="trailing" id="aOT-tJ-B0a"/>
+                                    <constraint firstItem="oik-o5-8dR" firstAttribute="leading" secondItem="qQS-Z1-pal" secondAttribute="trailing" constant="20" id="i4U-OF-o6c"/>
+                                    <constraint firstAttribute="bottom" secondItem="qQS-Z1-pal" secondAttribute="bottom" id="wMS-EM-Kz8"/>
+                                    <constraint firstItem="qQS-Z1-pal" firstAttribute="leading" secondItem="DRS-EK-gRU" secondAttribute="leading" id="xSg-Ym-a3f"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqE-U2-WaJ">
+                                <rect key="frame" x="277" y="12" width="46" height="30"/>
+                                <state key="normal" title="Use alignment rects">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9C-z1-jJZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="DRS-EK-gRU" secondAttribute="centerY" constant="-100" id="9fD-D7-cUZ"/>
+                            <constraint firstAttribute="centerX" secondItem="DRS-EK-gRU" secondAttribute="centerX" id="CHl-35-poR"/>
+                            <constraint firstAttribute="centerX" secondItem="BqE-U2-WaJ" secondAttribute="centerX" id="M3t-L4-yWs"/>
+                            <constraint firstAttribute="centerY" secondItem="H7X-WL-mfq" secondAttribute="centerY" constant="100" id="SNp-D0-KXS"/>
+                            <constraint firstAttribute="centerX" secondItem="H7X-WL-mfq" secondAttribute="centerX" id="rkh-60-khS"/>
+                            <constraint firstItem="BqE-U2-WaJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="s4f-UH-dM3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="badgedView" destination="H7X-WL-mfq" id="0wv-2J-U0G"/>
+                        <outlet property="decoratedView" destination="qQS-Z1-pal" id="6ZA-c1-JVZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="128" height="128"/>
+    </resources>
+</document>
