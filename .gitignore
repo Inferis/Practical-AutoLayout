@@ -1,0 +1,18 @@
+# xcode noise
+build/*
+*.pbxuser
+*.mode1v3
+*.xcworkspace
+xcuserdata
+project.xcworkspace/*
+xcuserdata/*
+builds/*
+
+# Betabuilder noise
+Butane/build/*
+pkg/*
+build.output
+
+# osx noise
+.DS_Store
+profile
